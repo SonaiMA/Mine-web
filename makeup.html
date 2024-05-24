@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HazelGlam.Pk</title>
+    <link rel="stylesheet" href="gpt.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!--Header-->
+     <header>
+
+        <!--Logo-->
+
+             <div class="logo">
+                  <img src="images/Screenshot_2024-05-11_103454-removebg-preview.png" alt="HazelGlam" height="65px">
+             </div>
+        <!--Logo End-->
+
+     <!--Navigation-->  
+
+        <nav>
+            <div class="nav_links" id="menu">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href=".html">Home</a></li>
+                    <li> <a href="makeup.html">MakeUp</a></li>
+                    <li> <a href="contact.html">Contact Us</a></li>
+                    <li class=" about"> <a href="About.html">About Us </a></li>
+                     </ul> 
+            </div>
+            <i class=" fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+     <!--Navigation end-->
+
+     <!--HomepageStart-->
+
+             
+    <!--Header Ended-->
+    <section class="products">
+        <div class="container">
+           <h2>Featured Products</h2>
+           <div class="product">
+               <img src="images/Lipsticks.png" alt="Product 1" class="img-responsive">
+               <h3>Matte Lipsticks Pack Of 5</h3>
+               <p>Rs.1,200</p>
+            <button>Add to Cart</button>
+           </div>
+           <div class="product">
+               <img src="images/eyeshadow.png" alt="Product 2" class="img-responsive">
+               <h3>Eyeshadow Palette </h3>
+               <p>Rs.1,500 </p>
+               <button>Add to Cart</button>
+           </div>
+           <!-- Add more products here -->
+       </div>
+       <div class="product_3">
+        <img src="images/Blush.png" alt="Blush Palette Pack of 6" class="img-responsive">
+        <h3> Blush Palette Pack Of 6</h3>
+        <p>Rs.1,493</p>
+     <button>Add to Cart</button>
+       </div>
+   </section>
+   
+   <footer>
+    <div class="footer">
+        <p>
+            &copy; 2024 Makeup Store
+        </p>
+    </div>
+   </footer>
+
+   <script>
+    var navLinks = document.getElementById("menu");
+    function showMenu () {
+        navLinks.style.left = "0";    
+    }
+    function hideMenu () {
+        navLinks.style.left = "-200px"
+    }
+</script>
+ </body>
